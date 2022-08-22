@@ -17,15 +17,56 @@ body{
     flex-direction: column;
     padding-top: var(--space-default);
     padding-bottom: 24px;
+    font-family:'Righteous', cursive;
+    
 }
 header{
-    background-color:greenyellow;
     height: 48px;
     
 }
+.logo{
+    margin-left: var(--space-default);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 32px;
+
+}
 main{
-    background-color: red;
     flex-grow: 1;
+    display: grid;
+    margin-left: var(--space-default);
+    margin-right: var(--space-default);
+    grid-template-columns: repeat(12,1fr);
+}
+.title{
+    grid-column: 1/-1;
+    place-self: center;
+    position: relative;
+
+}
+.title_text{
+    font-size: 20vw;
+    color:#FFFFFF;
+    ;
+}
+.title_transparent{
+    font-size: 27vw;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff5;
+    z-index: -1;
+
+}
+.description{
+    grid-column: 1/7;
+}
+.action{
+    grid-column: 7/-1;
 }
 footer{
     background-color: orange;
