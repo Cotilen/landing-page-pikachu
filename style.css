@@ -64,12 +64,40 @@ main{
 }
 .description{
     grid-column: 1/7;
+    place-self: center start;
+    color: #8E4106;
+
+}
+.description_title{
+    font-size: 64px;
+}
+.description__text{
+    font-size: 20px;
+    width: 500px;
 }
 .action{
     grid-column: 7/-1;
+    place-self: center end;
+    height: 100px;
+    width: 411px;
+    background-color: #8E4106;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.pikachu_image {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 footer{
-    background-color: orange;
-    
+    color: #FFFFFF;
+    text-align: center;
 
 }
