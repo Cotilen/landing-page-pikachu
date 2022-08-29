@@ -31,7 +31,7 @@ header{
     gap: 16px;
     text-decoration: none;
     color: var(--secundary-color);
-    font-size: 32px;
+    font-size: 2rem;
 
 }
 main{
@@ -47,12 +47,11 @@ main{
     position: relative;
 
 }
-.title_text{
+.title__text{
     font-size: 20vw;
     color:#FFFFFF;
-    ;
 }
-.title_transparent{
+.title__transparent{
     font-size: 27vw;
     position: absolute;
     top: -50%;
@@ -68,11 +67,11 @@ main{
     color: #8E4106;
 
 }
-.description_title{
-    font-size: 64px;
+.description__title{
+    font-size: 4rem;
 }
 .description__text{
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 500px;
 }
 .action{
@@ -84,7 +83,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 3rem;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -97,7 +96,72 @@ main{
 
 }
 footer{
-    color: #FFFFFF;
+    color: var(--secundary-color);
     text-align: center;
+
+}
+
+/* TABLE */
+@media (max-width:960px){
+
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .title{
+        place-self: start center;
+    }
+    .description{
+        grid-column: 1;
+        grid-row: 2;
+        place-self: center;
+        text-align: center;
+    
+    }
+    .action{
+        grid-column: 1;
+        grid-row: 2;
+        place-self: end center;
+    }
+
+    .pikachu_image {
+
+        transform: translate(-50%,-60%);
+
+    }
+
+    footer{
+        display: none;
+    }
+
+    :root{
+    --space-default:30px;
+    }
+
+}
+
+@media (max-width:640px){
+
+.description__text{
+    display: none;
+}
+
+.pikachu_image{
+
+    width: 90vw;
+    transform: translate(-50%,-50%);
+}
+
+.action{
+    width: 100%;
+}
+.description__title{
+    font-size: 10vw;
+}
+
+.title{
+    transform: translateY(30%);
+}
 
 }
